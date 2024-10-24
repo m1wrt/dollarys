@@ -29,7 +29,7 @@ function App() {
           <p>Porcentaje: {dollarData.percent}%</p>
         </div>
       ) : (
-        <p>Cargando datos...</p>
+        <CircularProgress />
       )}
     </>
   );
