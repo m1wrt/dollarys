@@ -36,3 +36,19 @@ function App() {
 }
 
 export default App;
+
+
+{
+
+  {dollarData ? (
+    <div id="conversion-rates">
+      <h2>{dollarData.title}</h2>
+      <p>Precio: {dollarData.price}</p>
+      <p>Cambio: {dollarData.change} ({dollarData.symbol})</p>
+      <p>Última actualización: {dollarData.last_update}</p>
+      <p>Porcentaje: {dollarData.percent}%</p>
+    </div>
+  ) : (
+    <p>Cargando datos...</p>
+  )}
+}
